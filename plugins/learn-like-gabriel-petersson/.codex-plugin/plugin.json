@@ -1,0 +1,25 @@
+{
+  "name": "learn-like-gabriel-petersson",
+  "version": "0.1.0",
+  "description": "Learn programming and AI through top-down recursive gap filling.",
+  "author": {
+    "name": "Seongdeok Hong",
+    "url": "https://github.com/sdhong0609"
+  },
+  "homepage": "https://github.com/sdhong0609/learning-lab",
+  "repository": "https://github.com/sdhong0609/learning-lab",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Learn Like Gabriel Petersson",
+    "shortDescription": "Learn by building, questioning, and explaining.",
+    "longDescription": "An unofficial learning plugin inspired by Gabriel Petersson's publicly shared top-down, recursive gap-filling approach.",
+    "developerName": "seongdeok",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": [
+      "Teach me web development through a real project.",
+      "Help me learn Python automation by building first.",
+      "Build a small AI model, then help me understand it."
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+.DS_Store
+*.swp
+*~
+
+# Local planning and verification records
+docs/
+tasks/

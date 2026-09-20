@@ -1,0 +1,20 @@
+{
+  "name": "learning-lab",
+  "interface": {
+    "displayName": "Learning Lab"
+  },
+  "plugins": [
+    {
+      "name": "learn-like-gabriel-petersson",
+      "source": {
+        "source": "local",
+        "path": "./plugins/learn-like-gabriel-petersson"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

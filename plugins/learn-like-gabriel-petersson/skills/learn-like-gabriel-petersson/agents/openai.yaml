@@ -1,0 +1,6 @@
+interface:
+  display_name: "Learn Like Gabriel Petersson"
+  short_description: "Build first, then recursively fill knowledge gaps"
+  default_prompt: "Use $learn-like-gabriel-petersson to teach me a coding topic through a real project."
+policy:
+  allow_implicit_invocation: true
