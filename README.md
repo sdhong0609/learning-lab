@@ -10,13 +10,28 @@
 
 ## 설치
 
-Codex CLI에서 마켓플레이스를 추가합니다.
+### Codex CLI
+
+터미널에서 마켓플레이스와 플러그인을 차례로 설치합니다.
+
+```bash
+codex plugin marketplace add sdhong0609/learning-lab
+codex plugin add learn-like-gabriel-petersson@learning-lab
+```
+
+설치 후 새 Codex 세션을 시작하면 플러그인을 사용할 수 있습니다.
+
+대화형으로 설치하려면 `codex`를 실행한 뒤 `/plugins`를 입력하고, `Learning Lab`에서 `Learn Like Gabriel Petersson`을 선택합니다.
+
+### ChatGPT 데스크톱 앱
+
+먼저 터미널에서 마켓플레이스를 추가합니다.
 
 ```bash
 codex plugin marketplace add sdhong0609/learning-lab
 ```
 
-그다음 ChatGPT 데스크톱 앱의 Plugins Directory에서 `Learning Lab`을 선택하고 `Learn Like Gabriel Petersson`을 설치합니다.
+그다음 Plugins Directory에서 `Learning Lab`을 선택하고 `Learn Like Gabriel Petersson`을 설치합니다. 설치 후 새 채팅을 시작합니다.
 
 ## 사용 예시
 
