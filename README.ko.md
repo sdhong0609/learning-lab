@@ -27,16 +27,6 @@ codex plugin add learn-like-gabriel-petersson@learning-lab
 
 대화형으로 설치하려면 `codex`를 실행한 뒤 `/plugins`를 입력하고, `Learning Lab`에서 `Learn Like Gabriel Petersson`을 선택합니다.
 
-### ChatGPT 데스크톱 앱
-
-먼저 터미널에서 마켓플레이스를 추가합니다.
-
-```bash
-codex plugin marketplace add sdhong0609/learning-lab
-```
-
-그다음 Plugins Directory에서 `Learning Lab`을 선택하고 `Learn Like Gabriel Petersson`을 설치합니다. 설치 후 새 채팅을 시작합니다.
-
 ### Claude Code
 
 터미널에서 마켓플레이스와 플러그인을 차례로 설치합니다.
@@ -71,10 +61,3 @@ learning-lab/
         ├── .claude-plugin/plugin.json
         └── skills/
 ```
-
-## 상태
-
-- 버전: `0.1.0`
-- 유형: Skills-only plugin
-- 공개 범위: GitHub 기반 마켓플레이스
-- OpenAI 공식 Plugins Directory 등록: 아직 제출하지 않음

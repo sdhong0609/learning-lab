@@ -27,16 +27,6 @@ Start a new Codex session after installation to use the plugin.
 
 To install interactively, run `codex`, type `/plugins`, and select `Learn Like Gabriel Petersson` under `Learning Lab`.
 
-### ChatGPT Desktop App
-
-First, add the marketplace from your terminal.
-
-```bash
-codex plugin marketplace add sdhong0609/learning-lab
-```
-
-Then select `Learning Lab` in the Plugins Directory and install `Learn Like Gabriel Petersson`. Start a new chat after installation.
-
 ### Claude Code
 
 Add the marketplace and then install the plugin from your terminal.
@@ -71,10 +61,3 @@ learning-lab/
         ├── .claude-plugin/plugin.json
         └── skills/
 ```
-
-## Status
-
-- Version: `0.1.0`
-- Type: Skills-only plugin
-- Distribution: GitHub-based marketplace
-- Submitted to the official OpenAI Plugins Directory: Not yet
