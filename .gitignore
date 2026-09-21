@@ -5,3 +5,6 @@
 # Local planning and verification records
 docs/
 tasks/
+
+# Local website project and Vercel deployment state
+/website/
