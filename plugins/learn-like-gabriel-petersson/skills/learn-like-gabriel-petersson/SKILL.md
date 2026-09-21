@@ -5,124 +5,124 @@ description: Teach programming and AI through a Gabriel Petersson-inspired top-d
 
 # Learn Like Gabriel Petersson
 
-Gabriel Petersson이 공개적으로 설명한 top-down `recursive gap filling` 방식에서 영감을 받은 비공식 학습 워크플로다. 사용자의 언어로 진행한다.
+An unofficial learning workflow inspired by the top-down `recursive gap filling` approach Gabriel Petersson has described publicly. Conduct the session in the user's language.
 
-## 핵심 원칙
+## Core Principles
 
-완성본이 교재다. 실제 문제를 먼저 작동하게 만든 뒤, 사용자가 이해하지 못한 부분에서 필요한 기초로 내려간다.
+The finished result is the textbook. Get a real problem working first, then descend into the fundamentals needed wherever the user does not understand.
 
-- 초기 완성본을 사용자가 먼저 작성하게 하지 않는다.
-- 구현 전에 긴 선수과목 강의를 하지 않는다.
-- 실행 성공과 사용자 이해를 같은 것으로 취급하지 않는다.
-- 처음 목표와 직접 관련된 지식만 탐구한다.
+- Do not make the user write the initial complete version first.
+- Do not give long prerequisite lectures before implementation.
+- Do not treat a successful run as the same thing as user understanding.
+- Explore only knowledge directly related to the original goal.
 
-## 사용 경계
+## Usage Boundaries
 
-다음 조건을 모두 만족할 때 사용한다.
+Use this workflow only when all of the following are true:
 
-- 사용자가 배우려는 의도를 명시했다.
-- 주제가 프로그래밍, 소프트웨어, 데이터, 자동화, AI·ML 등 코드 기반 기술이다.
-- 실제로 만들거나 실행할 결과물을 학습 매개로 사용할 수 있다.
+- The user has explicitly stated an intent to learn.
+- The subject is a code-based technical field such as programming, software, data, automation, or AI/ML.
+- A real result that can be built or run can serve as the learning vehicle.
 
-일반 구현·버그 수정·리팩터링 요청에는 적용하지 않는다. 언어, 역사, 철학 같은 비코딩 학습에도 적용하지 않는다.
+Do not apply it to ordinary implementation, bug-fix, or refactoring requests. Do not apply it to non-coding learning such as languages, history, or philosophy.
 
-## 1. 실제 문제 찾기
+## 1. Find the Real Problem
 
-사용자의 주제가 막연하면 한 번에 질문 하나만 한다. 답을 받은 뒤 다음 질문을 정한다.
+If the user's topic is vague, ask only one question at a time. Decide the next question after receiving the answer.
 
-다음을 알 수 있을 때까지 좁힌다.
+Narrow down until you know:
 
-- 무엇을 만들 것인가
-- 누구 또는 어떤 상황을 위한 것인가
-- 무엇이 작동하면 첫 학습 사이클이 끝나는가
+- What will be built
+- Who or what situation it is for
+- What must work for the first learning cycle to be complete
 
-학습 주제를 임의의 교과 과정으로 바꾸지 않는다. 사용자가 실제로 원하는 결과물을 찾는다.
+Do not turn the learning topic into an arbitrary curriculum. Find the result the user actually wants.
 
-## 2. 최소 프로젝트 확정
+## 2. Define the Minimal Project
 
-한 학습 사이클에 만들 수 있는 최소 범위를 제안한다. 목표, 작동 기준, 제외 범위를 짧게 확인한다.
+Propose the smallest scope that can be built in one learning cycle. Briefly confirm the goal, the success criteria, and what is out of scope.
 
-프로젝트를 줄일 때 학습 핵심을 제거하지 않는다. 부가 기능, 배포, 외부 서비스 연동처럼 첫 이해에 필요 없는 부분을 먼저 제외한다.
+When shrinking the project, do not remove the core of what is being learned. Cut first the parts not needed for initial understanding, such as extra features, deployment, and external service integrations.
 
-## 3. 완성본 먼저 만들기
+## 3. Build the Complete Version First
 
-목표가 명확해지면 에이전트가 최소 작동 버전 전체를 구현한다.
+Once the goal is clear, the agent implements the entire minimal working version.
 
-- 새 프로젝트라면 실행 가능한 전체 최소 결과물을 만든다.
-- 기존 프로젝트라면 학습 목표에 해당하는 경로를 끝까지 작동하게 만든다.
-- 필요한 파일을 만들고 실제 실행·테스트한다.
-- 오류를 재현하고 수정한다.
-- 실행하지 못한 결과물을 작동한다고 주장하지 않는다.
+- For a new project, build a complete, runnable minimal result.
+- For an existing project, make the path corresponding to the learning goal work end to end.
+- Create the necessary files and actually run and test them.
+- Reproduce and fix errors.
+- Do not claim that a result works if it has not been run.
 
-구현 중 발생한 중요한 오류와 수정은 나중에 구조를 이해할 단서로 보존한다. 하지만 구현 도중 사용자를 긴 강의로 끌고 가지 않는다.
+Keep important errors and fixes from implementation as clues for understanding the structure later. But do not drag the user through long lectures during implementation.
 
-권한, 안전, 외부 계정, 유료 API, 배포가 필요하면 에이전트의 일반 규칙에 따라 먼저 필요한 사용자 결정을 받는다.
+If permissions, safety, external accounts, paid APIs, or deployment are involved, first get the necessary user decisions according to the agent's general rules.
 
-## 4. 결과물 구조 지도 만들기
+## 4. Map the Structure of the Result
 
-작동 기준을 통과한 뒤, 목표와 관련된 주요 부분을 3~7개 구성요소로 묶어 보여준다.
+After the success criteria pass, group the main parts related to the goal into 3–7 components and present them.
 
-각 구성요소에는 다음만 먼저 제공한다.
+For each component, provide only the following at first:
 
-- 역할
-- 입력과 출력
-- 다른 부분과의 연결
-- 대표 파일 또는 코드 위치
+- Role
+- Inputs and outputs
+- Connections to other parts
+- Representative file or code location
 
-모든 파일을 처음부터 한 줄씩 설명하지 않는다. 구조 지도를 보여준 뒤 사용자가 가장 이해하지 못한 부분 하나를 고르게 한다.
+Do not explain every file line by line from the start. After showing the structure map, have the user pick the one part they understand least.
 
-## 5. 공백을 재귀적으로 메우기
+## 5. Fill Gaps Recursively
 
-선택한 부분을 직접적이고 구체적으로 설명한다. 설명 속 새 개념을 사용자가 이해하지 못하면 그 개념으로 한 단계 내려간다.
+Explain the chosen part directly and concretely. If the user does not understand a new concept in the explanation, descend one level into that concept.
 
-필요한 방법을 골라 사용한다.
+Choose from these methods as needed:
 
-- 작은 숫자 예제
-- 중간 상태와 데이터 흐름
-- 코드의 입력·출력과 type 또는 tensor shape
-- 현실 비유
-- 해당 부분을 제거했을 때 생기는 결과
-- 다른 선택지가 실패하거나 덜 적합한 이유
+- Small numeric examples
+- Intermediate state and data flow
+- Code inputs/outputs and types or tensor shapes
+- Real-world analogies
+- What happens if the part is removed
+- Why alternatives fail or fit less well
 
-같은 설명을 단순 반복하지 않는다. 이해되지 않으면 표현 방식이나 추상화 수준을 바꾼다.
+Do not simply repeat the same explanation. If it is not understood, change the framing or level of abstraction.
 
-재귀 탐색은 현재 프로젝트 목표에 필요한 지점에서 멈춘다. 외부 라이브러리 내부나 무관한 선수지식 전체로 확장하지 않는다.
+Stop the recursive exploration at the point needed for the current project goal. Do not expand into the internals of external libraries or into entire unrelated prerequisites.
 
-## 6. 자기 설명 받기
+## 6. Ask for a Self-Explanation
 
-사용자가 이해했다고 느끼면 정답을 다시 요약하기 전에 요청한다.
+When the user feels they understand, ask for a self-explanation before summarizing the answer again. Use a request like this, in the user's language:
 
-> 지금 이해한 내용을 자기 말로 설명해 주세요. 이 부분이 무엇을 하고, 왜 필요하며, 프로젝트의 다른 부분과 어떻게 연결되는지 포함해 주세요.
+> Please explain what you now understand in your own words. Include what this part does, why it is needed, and how it connects to the other parts of the project.
 
-사용자 설명 자체를 검증 대상으로 삼는다.
+Treat the user's explanation itself as the thing to verify.
 
-## 7. 설명 검증하기
+## 7. Verify the Explanation
 
-검증 결과를 구분해서 제시한다.
+Present the verification result in separate groups:
 
-- 맞게 이해한 부분
-- 잘못 이해한 부분
-- 빠진 핵심 부분
+- What was understood correctly
+- What was misunderstood
+- Key points that are missing
 
-오류나 누락이 있으면 해당 공백만 다시 설명하고 자기 설명을 다시 요청한다. 정확한 부분까지 처음부터 재강의하지 않는다.
+If there are errors or omissions, re-explain only those gaps and ask for a self-explanation again. Do not re-lecture the correct parts from the beginning.
 
-사용자가 처음 목표에 필요한 핵심을 정확히 설명할 수 있으면 해당 학습 사이클을 완료한다.
+When the user can accurately explain the core needed for the original goal, the learning cycle is complete.
 
-## 완료 응답
+## Completion Response
 
-짧게 정리한다.
+Keep it short:
 
-- 만든 결과물과 위치
-- 사용자가 설명할 수 있게 된 핵심
-- 아직 범위 밖으로 남긴 부분
+- The result that was built and its location
+- The core ideas the user can now explain
+- What was left out of scope
 
-별도 점수, 퀴즈, AI 없는 독립 구현 과제를 추가하지 않는다. 사용자가 후속 사이클을 원하면 다음 실제 문제를 새로 정한다.
+Do not add separate scores, quizzes, or AI-free independent implementation assignments. If the user wants a follow-up cycle, define a new real problem.
 
-## 금지 사항
+## Prohibited
 
-- 사용자의 명시적 학습 의도 없이 자동으로 강의 모드 전환
-- 초기 완성 코드를 사용자가 작성하도록 강제
-- 모든 코드와 의존성 내부를 이해해야 완료된다고 주장
-- 결과물을 만들기 전에 포괄적 커리큘럼부터 진행
-- 이해 검증을 단순한 “이해했나요?” 질문으로 대체
-- Gabriel Petersson의 공식 제품, 승인, 제휴라고 표현
+- Switching into teaching mode automatically without the user's explicit intent to learn
+- Forcing the user to write the initial complete code
+- Claiming completion requires understanding all code and dependency internals
+- Running a comprehensive curriculum before building the result
+- Replacing understanding verification with a simple "Do you understand?" question
+- Describing this as an official Gabriel Petersson product, endorsement, or affiliation
