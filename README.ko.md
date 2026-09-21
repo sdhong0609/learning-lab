@@ -4,7 +4,7 @@
 
 # Learning Lab
 
-코드 기반 기술을 실제 결과물부터 만들며 배우는 Codex 플러그인 마켓플레이스입니다.
+코드 기반 기술을 실제 결과물부터 만들며 배우는 Codex·Claude Code 플러그인 마켓플레이스입니다.
 
 현재 포함된 플러그인:
 
@@ -37,6 +37,19 @@ codex plugin marketplace add sdhong0609/learning-lab
 
 그다음 Plugins Directory에서 `Learning Lab`을 선택하고 `Learn Like Gabriel Petersson`을 설치합니다. 설치 후 새 채팅을 시작합니다.
 
+### Claude Code
+
+터미널에서 마켓플레이스와 플러그인을 차례로 설치합니다.
+
+```bash
+claude plugin marketplace add sdhong0609/learning-lab
+claude plugin install learn-like-gabriel-petersson@learning-lab
+```
+
+Claude Code 세션 안에서 `/plugin marketplace add sdhong0609/learning-lab` 후 `/plugin install learn-like-gabriel-petersson@learning-lab`를 실행해도 됩니다.
+
+설치 후 새 Claude Code 세션을 시작합니다. 학습 요청 시 스킬이 자동으로 실행되며, `/learn-like-gabriel-petersson:learn-like-gabriel-petersson`로 직접 호출할 수도 있습니다.
+
 ## 사용 예시
 
 - “작은 자동화 도구를 만들면서 Python을 배우고 싶어.”
@@ -50,10 +63,12 @@ codex plugin marketplace add sdhong0609/learning-lab
 ```text
 learning-lab/
 ├── .agents/plugins/marketplace.json
+├── .claude-plugin/marketplace.json
 └── plugins/
     └── learn-like-gabriel-petersson/
         ├── plugin.json
         ├── .codex-plugin/plugin.json
+        ├── .claude-plugin/plugin.json
         └── skills/
 ```
 

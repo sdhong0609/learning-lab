@@ -1,0 +1,17 @@
+{
+  "name": "learn-like-gabriel-petersson",
+  "version": "0.1.0",
+  "description": "Learn programming and AI through top-down recursive gap filling.",
+  "author": {
+    "name": "Seongdeok Hong",
+    "url": "https://github.com/sdhong0609"
+  },
+  "homepage": "https://github.com/sdhong0609/learning-lab",
+  "repository": "https://github.com/sdhong0609/learning-lab",
+  "keywords": [
+    "learning",
+    "programming",
+    "ai",
+    "project-based-learning"
+  ]
+}

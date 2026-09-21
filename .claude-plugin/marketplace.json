@@ -1,0 +1,19 @@
+{
+  "name": "learning-lab",
+  "owner": {
+    "name": "Seongdeok Hong",
+    "url": "https://github.com/sdhong0609"
+  },
+  "metadata": {
+    "description": "Plugins for learning code-based skills by building real, working results first."
+  },
+  "plugins": [
+    {
+      "name": "learn-like-gabriel-petersson",
+      "source": "./plugins/learn-like-gabriel-petersson",
+      "description": "Learn programming and AI through top-down recursive gap filling.",
+      "version": "0.1.0",
+      "category": "productivity"
+    }
+  ]
+}

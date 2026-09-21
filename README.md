@@ -4,7 +4,7 @@
 
 # Learning Lab
 
-A Codex plugin marketplace for learning code-based skills by building real, working results first.
+A Codex and Claude Code plugin marketplace for learning code-based skills by building real, working results first.
 
 Included plugins:
 
@@ -37,6 +37,19 @@ codex plugin marketplace add sdhong0609/learning-lab
 
 Then select `Learning Lab` in the Plugins Directory and install `Learn Like Gabriel Petersson`. Start a new chat after installation.
 
+### Claude Code
+
+Add the marketplace and then install the plugin from your terminal.
+
+```bash
+claude plugin marketplace add sdhong0609/learning-lab
+claude plugin install learn-like-gabriel-petersson@learning-lab
+```
+
+Or, inside a Claude Code session, run `/plugin marketplace add sdhong0609/learning-lab` and then `/plugin install learn-like-gabriel-petersson@learning-lab`.
+
+Start a new Claude Code session after installation. The skill triggers automatically on learning requests, or you can call it directly with `/learn-like-gabriel-petersson:learn-like-gabriel-petersson`.
+
 ## Example Prompts
 
 - "I want to learn Python by building a small automation tool."
@@ -50,10 +63,12 @@ The plugin first builds a minimal working result. It then digs into what you don
 ```text
 learning-lab/
 ├── .agents/plugins/marketplace.json
+├── .claude-plugin/marketplace.json
 └── plugins/
     └── learn-like-gabriel-petersson/
         ├── plugin.json
         ├── .codex-plugin/plugin.json
+        ├── .claude-plugin/plugin.json
         └── skills/
 ```
 
